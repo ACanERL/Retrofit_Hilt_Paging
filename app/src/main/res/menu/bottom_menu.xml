@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+   <item android:id="@+id/movieListFragment"
+       android:icon="@drawable/baseline_local_movies_24"
+       android:title="Movies"></item>
+    <item android:id="@+id/favoriteFragment"
+        android:icon="@drawable/baseline_favorite_border_24"
+        android:title="Favorite"></item>
+</menu>

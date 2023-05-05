@@ -3,9 +3,9 @@ package com.example.retrofit_hilt_paging.di
 import android.provider.SyncStateContract
 import com.example.retrofit_hilt_paging.BuildConfig
 import com.example.retrofit_hilt_paging.api.ApiService
-import com.example.retrofit_hilt_paging.util.API_KEY
-import com.example.retrofit_hilt_paging.util.BASE_URL
-import com.example.retrofit_hilt_paging.util.NETWORK_TIMEOUT
+import com.example.retrofit_hilt_paging.util.Constants.API_KEY
+import com.example.retrofit_hilt_paging.util.Constants.BASE_URL
+import com.example.retrofit_hilt_paging.util.Constants.NETWORK_TIMEOUT
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import dagger.Module

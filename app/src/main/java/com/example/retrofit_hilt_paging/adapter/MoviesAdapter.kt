@@ -11,7 +11,7 @@ import coil.size.Scale
 import com.example.retrofit_hilt_paging.R
 import com.example.retrofit_hilt_paging.databinding.MovieItemBinding
 import com.example.retrofit_hilt_paging.model.MovieList
-import com.example.retrofit_hilt_paging.util.POSTER_BASE_URL
+import com.example.retrofit_hilt_paging.util.Constants.POSTER_BASE_URL
 import javax.inject.Inject
 
 class MoviesAdapter @Inject constructor():PagingDataAdapter<MovieList.Result,MoviesAdapter.ViewHolder>(differCallback) {

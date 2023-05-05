@@ -4,7 +4,6 @@ import androidx.paging.PagingSource
 import androidx.paging.PagingState
 import com.example.retrofit_hilt_paging.model.MovieList
 import com.example.retrofit_hilt_paging.repository.ApiRepository
-import com.example.retrofit_hilt_paging.util.API_KEY
 import retrofit2.HttpException
 
 class PagingSource(
@@ -16,11 +15,12 @@ class PagingSource(
 
     override suspend fun load(params: LoadParams<Int>): LoadResult<Int, MovieList.Result> {
         return try {
-            val currentPage = params.key ?: 1
+            val currentPage = params.key ?: 2
             val response = repository.getPopulerMovieList(currentPage)
             val data = response.body()!!.results
             val responseData = mutableListOf<MovieList.Result>()
             responseData.addAll(data)
+
 
             LoadResult.Page(
                 data = responseData,
