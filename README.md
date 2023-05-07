@@ -14,6 +14,7 @@ Technologies and Libraries Used :
 <li>View Binding</li>
 <li>Retrofit</li>
 <li>Dagger Hilt</li>
+<li>Paging</li>
 <li>Coroutines</li>
 <li>Coil</li>
 
